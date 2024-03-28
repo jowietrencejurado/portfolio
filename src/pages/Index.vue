@@ -126,7 +126,7 @@
 												v-model="model.dialog[i]"
 												max-width="900">
 												<template v-slot:activator="{ props: activatorProps }">
-													<v-btn v-bind="activatorProps">
+													<v-btn v-bind="activatorProps" class="text--white">
 														view projects
 													</v-btn>
 												</template>
