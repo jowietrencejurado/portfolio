@@ -189,6 +189,7 @@ import laravel from '@/assets/logo/laravel.png';
 import php from '@/assets/logo/php.png';
 import vuejs from '@/assets/logo/vuejs.png';
 import nuxtjs from '@/assets/logo/nuxtjs.png';
+import wordpress from '@/assets/logo/wordpress.png';
 import html from '@/assets/logo/html.png';
 import css3 from '@/assets/logo/css3.png';
 import cSharp from '@/assets/logo/c-sharp.png';
@@ -328,6 +329,10 @@ const skills = reactive([
 		link: 'https://www.tutorialspoint.com/css/css3_tutorial.htm',
 		logo: css3,
 		name: 'CSS3'
+	}, {
+		link: 'https://wordpress.org/',
+		logo: wordpress,
+		name: 'WordPress'
 	}, {
 		link: 'https://dotnet.microsoft.com/en-us/learntocode',
 		logo: cSharp,
@@ -625,19 +630,6 @@ const works = reactive([
 		jobTitle: 'Intermediate Software Engineer'
 	}
 ]);
-
-const getImage = (imageName, type) => {
-	let url = '';
-	if (type === 'logo') {
-		url = `/src/assets/logo/${imageName}`;
-	}
-
-	if (type === 'projects') {
-		url = `/src/assets/projects/${imageName}`;
-	}
-	const imgUrl = new URL(url, import.meta.url).href;
-	return imgUrl;
-}
 
 const toggleTheme = () => {
 	theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
