@@ -37,7 +37,6 @@ export default ({ mode }) => {
     build: {
       minify: true,
       sourcemap: true,
-      outDir: 'dist',
       rollupOptions: {
         preserveSymlinks: true,
         input: {
