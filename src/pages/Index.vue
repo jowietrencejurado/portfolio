@@ -83,7 +83,7 @@
 									<v-col v-for="item in skills" cols="2">
 										<v-card class="mx-auto py-2" max-height="150" :href="item.link" target="_blank" rel="noopener"
 											variant="tonal" elevation="2">
-											<v-img :src="getImage(item.logo, 'logo')" height="70" class="mx-auto my-3"></v-img>
+											<v-img :src="item.logo" height="70" class="mx-auto my-3"></v-img>
 											<v-card-title class="text-center skill-title">{{ item.name }}</v-card-title>
 										</v-card>
 									</v-col>
@@ -185,6 +185,23 @@ import { reactive } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { onBeforeMount } from 'vue';
 import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
+// import airtableLogo from '@/assets/logo/airtable.png';
 
 const theme = useTheme();
 const router = useRouter();
@@ -214,7 +231,7 @@ const model = reactive({
 const skills = reactive([
 	{
 		link: 'https://laravel.com/',
-		logo: 'laravel.png',
+		logo: airtableLogo,
 		name: 'Laravel'
 	}, {
 		link: 'https://www.php.net/',
